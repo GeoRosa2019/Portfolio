@@ -8,6 +8,8 @@ body * {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: #363945;
+    color: aliceblue;
   }
   
   h1,
@@ -21,14 +23,12 @@ body * {
     border: none !important;
   }
   
-  /*Containers*/
-  
   .image-section {
     height: 100vh;
     -moz-text-align: center; /*works on Firefox */
     -webkit-text-align: center; /*works on Safari and Google Chrome*/
     text-align: center;
-    background-color: #646464;
+    background-color: #2d2f39;
     -moz-padding: 20px; /*works on Firefox */
     -webkit-padding: 20px; /*works on Safari and Google Chrome*/
     padding: 20px;
@@ -84,18 +84,8 @@ body * {
     padding: 8px 0px;
   }
   
-  /*Utilities*/
-  
-  .w3-margin-top-2 {
-    margin-top: 32px;
-  }
-  
-  .w3-margin-top-4 {
-    margin-top: 64px;
-  }
-  
-  .w3-margin-top-20-percent {
-    margin-top: 20%;
+  .margin-top {
+    margin-top: 50px;
   }
   
   .w3-sticky {
@@ -108,6 +98,9 @@ body * {
     position: fixed;
     bottom: 0;
     left: 0;
+  }
+  .ambercolor {
+    color: gold
   }
   
   /*Media queries*/
