@@ -1,2 +1,2 @@
-# Portfolio
-Hosting my Portfolio website
+# NewWebpagewithJS
+ Going to recreate my first webpage with Javascript

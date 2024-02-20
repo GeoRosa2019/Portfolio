@@ -1,197 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Geovanny's Portfolio</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Montserrat font-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
-  </head>
-  <body>   
-    <section>
-      <!-- MOBILE NAVIGATION -->
-      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
-        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Intro</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
-      </div>
-      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
-        <a href="#project" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PROJECT</a>
-        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
-        <a href="#project" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PROJECTS</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
-      </div>
 
-      <!-- SOCIAL SECTION -->
-      <section class="image-section w3-quarter w3-fixed w3-padding-small">
-        <!--IMAGE/AVATAR-->
-        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
-        <!--SCIAL NETWORK BUTTONS-->
-        <div class="links w3-margin-top w3-padding-small">
-          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/geovanny-rosales-929121213/" target="https://www.linkedin.com/in/geovanny-rosales-929121213/"">
-             <i data-feather="linkedin"></i>
-          </a>
-          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/GeoRosa2019" target="https://github.com/GeoRosa2019">
-            <i data-feather="github"></i>
-          </a>
-        </div>
-        <!--DOWNLOAD BUTTON-->
-        <div class="w3-container w3-padding-16">
-          <a href="./Geovanny-Rosales-Resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" download="resume.pdf">
-            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
-            <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
-          </a>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="" viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
 
-      <!--CV CONTENT SECTION-->
-      <section class="w3-threequarter w3-padding-large w3-right">
-        <!--DESKTOP NAVIGATION-->
-        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
-          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
-          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
-          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
-        </div>
-          <!--HOME SECTION-->
-          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
-            <h2>HEY THERE,</h2>
-            <h1>I'm Geovanny!</h1>
-            <h3>Software Developer and Game Programmer </h3>
-          </div>
-
-          <!--ABOUT SECTION-->
-          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large"> 
-            <h2 class="w3-border-bottom w3-border-amber w3-text-amber margin-top" style="border-width: 3px !important;">ABOUT</h2>
-            <p class="w3-margin-top-2"> 
-              Hello, My name is Geovanny Rosales.
-              I am a recent 2022 graduate at Loyola University New Orleans in Computer Science with a focus in Game Programming.
-              I'm an Energetic Software Engineer with experience creating games and applications.
-              I am a tech enthusiast, I enjoy learning new things and love making games.
-            </p>
-            <p class="">
-            </p>
-          </div>
-          <!--INTERESTS SECTION-->
-            <div class="margin-top">
-              <h3 class="w3-border-amber, w3-text-amber">Recent Projects</h3>
-             <p class=""> 
-              This is a Unity project developed for Microsoft Game camp in New Orleans where I and other artist work together for 3 months creating a demo. 
-           </p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li> <video width="320" height="240" controls>
-                    <source src="GameCamp.mp4" type="video/mp4">
-                    <source src="GameCamp.ogg" type="video/ogg">
-                  Your browser does not support the video tag. </video><br>
-                  This is my Team's Demo for Microsoft's Game Camp in New Orleans!</a></li>
-                  <li><a href="https://github.com/COSC-A451-2022-Spring-SW-Engineering/Bank-System-2022">Take a look at my Software Engineering Project! </a></li>
-                    <p class=""> 
-                      My Software Engineering Project was a Banking System. I got to work with my fellow classmates using HTML, Java, Docker and MySQL. I was able to work in Front end, Back end, DevOps and Product management.
-                    </p>
-                  <!--<li><a href="https://geo2077.itch.io">Currently doing Game Jams on Itch.io! See some of the projects I've Worked on!</a></li>-->
-                </ul>
-            </div>   
-
-          <!--RESUME-->
-          <div id="resume" class="margin-top">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <!--SKILLS SECTION-->
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber w3-text-amber">MY SKILLS</h3>
-              <!--TECHNICAL SKILLS-->
-              <h4>Technical skills</h4>
-                <ul class="w3-ul" style="font-weight: 500;">
-
-                  <li>Coding skills, I have strong skills and experience in Java, C++, C#, HTML, CSS, SQL, Python</li>
-                  <li>Experience with Object-Oriented Programming, Functional Programming</li>
-                  <li>Extensive programming in OpenGL, Unity, and Unreal game engines</li>
-                  <li>Proficient in game design, narratives in media and games, and screenwriting</li>
-                  <li>Relevant Coursework: Web Design, Game Design, Artificial Intelligence, Software Engineering</li>
-                  <li></li>
-                </ul>
-                <!--SOFT SKILLS-->
-              <!--<h4>Soft skills</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>I have great communication skills, I use it daily in ID Tech to communicate programming concepts to new programmers.</li>
-                <li>I have a lot of patience with programming.</li>
-                <li>I enjoy working with teams, being able to collaborate and create ideas with my Software Engineering class and my Game Camp Team a </li>
-              </ul>
-            </div>-->
-
-              <!--EMPLOYMENT HISTORY SECTION-->
-              <h3 class="w3-border-amber w3-text-amber">MY EMPLOYMENT and EXPERIENCES HISTORY</h3>
-              <div class="">
-                <h4>Virtual Camp Instructer-ID Tech</h4>
-                <p>June 2022 - Present</p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Teaching programming and game design as a virtual instructor. </li>
-                </ul>
-              </div>
-              <div class="">
-                <h4>Student Volunteer Internship-Centers for Medicare and Medicaid</h4>
-                <p>Sept 2021 - March 2022 </p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Worked in the bug testing the appeal system reporting issues that were found</li>
-                  <li>Trained in Agile management with other programmers</li>
-                </ul>
-              </div>
-              <div class="">
-                <h4>Microsoft Game Camp</h4>
-                <p>February 2022 - May 2022 </p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Worked with local developers to create a demo for Microsoft</li>
-                </ul>
-              </div>
-            </div>
-
-            <!---EDUCATION SECTION-->
-            <div class="margin-top">
-              <h3 class="w3-border-amber w3-text-amber">MY EDUCATION</h3>
-                <h4>Bachelor in Computer Science Loyola University of New Orleans</h4>
-                <p>2018 - 2022 </p>
-                <h4>High school diploma, Archbishop Rummel High school, Metairie LA</h4>
-                <p>2012 - 2017 </p>
-            </div>
-          <!--CONTACT SECTION-->
-          <div id="contact" class="margin-top">
-            <h2 class="w3-border-bottom w3-border-amber w3-text-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
-            <div class="w3-margin-top-2" style="font-weight: 500;">
-              <p>Name: Geovanny Rosales</p>
-              <p>E-mail: gerosales25@gmail.com</p>
-            </div>
-          </div>
-
-        <!--FOOTER-->
-        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-          <p>© 2022 - Geovanny Rosales</p>
-           <!--<p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
-          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> -->
-        <!-- End footer -->
-        </footer>
-
-        <!--END OF CV SECTION-->
-      </section>      
+<body>
+  <!--Navbar-->
+  <nav class="navbar center">
+    <a href="#section-1" class="navbar-link">Home</a>
+    <a href="#section-2" class="navbar-link">About</a>
+    <a href="#section-3" class="navbar-link">Portfolio</a>
+    <a href="#section-4" class="navbar-link">Contact</a>
+    <a href="Geovanny_Rosales_Resume.pdf" download="Resume" class="navbar-link">Resume</a>
+  </nav>
+  <!--End of Navbar-->
+  <div class="container">
+    <!--Section1 for intro -->
+    <section class="section-1 center" id="section-1">
+      <h1 class="section-1-heading">
+        Game Programmer</span>
+      </h1>
+      <img src="images/myFace.jpg" alt="Geovanny Rosales" class="person-img" />
+      <h3 class="person-name">Geovanny Rosales</h3>
+      <a href="#" class="section-1-btn"> My Projects</a>
     </section>
-    <script>
-      // Function to toggle mobile navigation
-      function toggleNavigation() {
-        let nav = document.getElementById("mobile-nav");
-        if (nav.classList.contains('w3-show')) {
-          nav.classList.remove('w3-show');
-        } else { 
-          nav.classList.add('w3-show');
-        }
-      }
-    </script>
-    <script>
-      // Script to load feather icons
-      feather.replace()
-    </script>
-  </body>
+    <!--End of Section 1-->
+    <!--Section 2 for about-->
+    <section class="section-2" id="section-2">
+      <h1 class="section-heading section-2-heading">About Me</h1>
+      <div class="progress-bars-wrapper">
+        <div class="progress-bar">
+          <p class="progress-text">
+            C++
+            <span></span>%
+          </p>
+          <div class="progress-percent"></div>
+        </div>
+        <div class="progress-bar">
+          <p class="progress-text">
+            C#
+            <span></span>%
+          </p>
+          <div class="progress-percent"></div>
+        </div>
+        <div class="progress-bar">
+          <p class="progress-text">
+            Unreal Engine
+            <span></span>%
+          </p>
+          <div class="progress-percent"></div>
+        </div>
+        <div class="progress-bar">
+          <p class="progress-text">
+            unity
+            <span></span>%
+          </p>
+          <div class="progress-percent"></div>
+        </div>
+      </div>
+      <div class="services">
+        <div class="service">
+          <i class="fas fa-paint-brush"></i>
+          <h2 class="service-heading">Game Design</h2>
+        </div>
+        <div class="service">
+          <i class="fas fa-code"></i>
+          <h2 class="service-heading">Game Programming</h2>
+        </div>
+        <div class="service">
+          <i class="fas fa-gamepad"></i>
+          <h2 class="service-heading">Developer</h2>
+        </div>
+        <div class="service">
+          <i class="fas fa-database"></i>
+          <h2 class="service-heading">Database</h2>
+        </div>
+      </div>
+    </section>
+    <!--End of Section 2-->
+    <!--Section 3-->
+    <section class="section-3" id="section-3">
+      <h1 class="section-3-heading">Current Projects</h1>
+      <div class="" projects-wrapper>
+        <div class="project">
+          <div class="project-text">
+            <h2 class="project-name" Fat Cap</h2>
+              <h4 class="Project-technology">FatCap</h4>
+          </div>
+          <img src="images/FatCap.png" class="project-img" />
+          <a href="https://youtu.be/20FTQjVuK5s" class="project-link" target="_blank">Go to video</a>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!--End of Section 3-->
+
+  <!--Section 4-->
+  <section class="section-4" id="section-4">
+    <h1 class="section-4-heading">Contact Me</h1>
+    <form action="" class="contact-form">
+      <form action="mailto:geovannyrosales5@gmail.com" method="post" enctype="text/plain">
+        <input type="text" class="contact-form-text" placeholder="Your Name" />
+        <input type="email" class="contact-form-text" placeholder="Your Email" />
+        <input type="text" class="contact-form-text" placeholder="Your Phone" />
+        <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+        <input type="submit" class="contact-form-btn" value="Send" />
+      </form>
+    </form>
+    <!--End of Section 4-->
+    <!--Section 5-->
+    <footer class="section-5 center">
+      <div class="social-media">
+        <a href="#" class="social-media-link">
+          <i class="fab fa-github-square"></i>
+        </a>
+        <a href="#" class="social-media-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p class="copyright">Copyright &copy; 2021 Geovanny Rosales. All rights Reserved</p>
+    </footer>
+    <!--End of Section 5-->
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
